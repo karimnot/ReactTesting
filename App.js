@@ -14,6 +14,9 @@ import LayoutFlexDirection from './components/LayoutFlexDirection';
 import LayoutJustifyContent from './components/LayoutJustifyContent';
 import LayoutAlign from './components/LayoutAlign';
 import TextInput from './components/TextInput';
+import Touches from './components/Touches';
+import Touchable from './components/Touchable';
+
 
 export default class App extends Component {
   render() {
@@ -31,9 +34,13 @@ export default class App extends Component {
         <LayoutFlexDirection />
         <LayoutJustifyContent />   
         <LayoutAlign />
-        */}
+
         <View style={{flex:1, backgroundColor: 'powderblue'}}/>
-        <TextInput />
+        <TextInput />      
+        
+        <Touches />        
+        */}
+        <Touchable />
       </View>
     );
   }
