@@ -13,6 +13,7 @@ import FlexDimension from './components/FlexDimension';
 import LayoutFlexDirection from './components/LayoutFlexDirection';
 import LayoutJustifyContent from './components/LayoutJustifyContent';
 import LayoutAlign from './components/LayoutAlign';
+import TextInput from './components/TextInput';
 
 export default class App extends Component {
   render() {
@@ -28,9 +29,11 @@ export default class App extends Component {
         <Dimension />
         <FlexDimension />
         <LayoutFlexDirection />
-        <LayoutJustifyContent />        
-        */}
+        <LayoutJustifyContent />   
         <LayoutAlign />
+        */}
+        <View style={{flex:1, backgroundColor: 'powderblue'}}/>
+        <TextInput />
       </View>
     );
   }
