@@ -12,6 +12,7 @@ import Dimension from './components/Dimension';
 import FlexDimension from './components/FlexDimension';
 import LayoutFlexDirection from './components/LayoutFlexDirection';
 import LayoutJustifyContent from './components/LayoutJustifyContent';
+import LayoutAlign from './components/LayoutAlign';
 
 export default class App extends Component {
   render() {
@@ -27,8 +28,9 @@ export default class App extends Component {
         <Dimension />
         <FlexDimension />
         <LayoutFlexDirection />
+        <LayoutJustifyContent />        
         */}
-        <LayoutJustifyContent />
+        <LayoutAlign />
       </View>
     );
   }
