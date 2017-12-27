@@ -16,6 +16,7 @@ import LayoutAlign from './components/LayoutAlign';
 import TextInput from './components/TextInput';
 import Touches from './components/Touches';
 import ScrollViewUse from './components/ScrollViewUse';
+import ListUse from './components/ListUse';
 
 
 export default class App extends Component {
@@ -40,9 +41,11 @@ export default class App extends Component {
         
         <Touches />  
         <Touchable />
-              
-        */}
+           
         <ScrollViewUse />
+        
+        */}
+        <ListUse />
         
       </View>
     );
