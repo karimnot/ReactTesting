@@ -15,7 +15,7 @@ import LayoutJustifyContent from './components/LayoutJustifyContent';
 import LayoutAlign from './components/LayoutAlign';
 import TextInput from './components/TextInput';
 import Touches from './components/Touches';
-import Touchable from './components/Touchable';
+import ScrollViewUse from './components/ScrollViewUse';
 
 
 export default class App extends Component {
@@ -38,9 +38,12 @@ export default class App extends Component {
         <View style={{flex:1, backgroundColor: 'powderblue'}}/>
         <TextInput />      
         
-        <Touches />        
-        */}
+        <Touches />  
         <Touchable />
+              
+        */}
+        <ScrollViewUse />
+        
       </View>
     );
   }
