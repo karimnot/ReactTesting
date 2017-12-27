@@ -17,6 +17,7 @@ import TextInput from './components/TextInput';
 import Touches from './components/Touches';
 import ScrollViewUse from './components/ScrollViewUse';
 import ListUse from './components/ListUse';
+import Fetch from './components/Fetch';
 
 
 export default class App extends Component {
@@ -43,9 +44,10 @@ export default class App extends Component {
         <Touchable />
            
         <ScrollViewUse />
+        <ListUse />
         
         */}
-        <ListUse />
+        <Fetch />
         
       </View>
     );
