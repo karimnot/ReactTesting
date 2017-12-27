@@ -19,6 +19,8 @@ import ScrollViewUse from './components/ScrollViewUse';
 import ListUse from './components/ListUse';
 import Fetch from './components/Fetch';
 
+import Plataform from './components/Plataform';
+import Header from './components/Header';
 
 export default class App extends Component {
   render() {
@@ -46,9 +48,11 @@ export default class App extends Component {
         <ScrollViewUse />
         <ListUse />
         
-        */}
         <Fetch />
         
+        */}
+        <Header title='Titulo!'/>
+        <Plataform />
       </View>
     );
   }
