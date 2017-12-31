@@ -5,8 +5,7 @@ import {
   View,
   Image, 
   ScrollView,
-  ImageBackground,
-  TouchableOpacity
+  ImageBackground
 } from 'react-native';
 
 
@@ -56,7 +55,7 @@ export default class App extends Component {
 						backgroundColor: 'blue',
 					}} 
 				>
-					<Image
+					<ImageBackground
 						style={{
 							flex: 1,
 							flexDirection: 'column',
@@ -64,22 +63,10 @@ export default class App extends Component {
 						}}
 						source={{uri:('https://i.pinimg.com/736x/a1/ec/dc/a1ecdc1ce19688bc1b02140439ce576e--product-photography-photography-ideas.jpg')}}					
 						resizeMode="stretch"
-					/>				
-				</View>					
-				<TouchableOpacity 
-					style={{					
-						height: 200,
-						flexDirection: 'column',
-						backgroundColor: 'blue',
-					}} >
-					<ImageBackground
-						style={styles.container}
-						source={{uri:('https://i.pinimg.com/736x/a1/ec/dc/a1ecdc1ce19688bc1b02140439ce576e--product-photography-photography-ideas.jpg')}}					
-						resizeMode="stretch"
 					>
-						<Text style={styles.titleStyle}>kdjdjd</Text>
-					</ImageBackground>	
-				</TouchableOpacity>			
+						<Text>Texto jdjd</Text>
+					</ImageBackground>				
+				</View>					
 				<View     
 					style={{					
 						height: 300,
@@ -96,7 +83,7 @@ export default class App extends Component {
 						source={{uri:('https://i.pinimg.com/736x/a1/ec/dc/a1ecdc1ce19688bc1b02140439ce576e--product-photography-photography-ideas.jpg')}}					
 						resizeMode="stretch"
 					/>				
-				</View>								
+				</View>				
 			</View>
 			</ScrollView>
 			
@@ -105,15 +92,3 @@ export default class App extends Component {
 }
 
 
-const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		backgroundColor:'transparent',
-		justifyContent: 'center',
-		alignItems: 'center' 
-	},
-	titleStyle:{
-		color:'white',
-		fontSize: 20
-	}
-});

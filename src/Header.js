@@ -19,13 +19,13 @@ const styles = StyleSheet.create ({
 		flexDirection: 'row',
 		justifyContent: 'center',
 		alignItems: 'center',
-		height: 90,
 		paddingTop: 30,
 		shadowColor: '#000',
 		shadowOffset: {width: 0, height: 10},
 		shadowOpacity: 5,
 		elevation: 2,
-		position: 'relative'		
+		position: 'relative',
+		flex: 1	
 	},
 	textStyle: {
 		fontSize: 30
