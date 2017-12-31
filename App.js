@@ -32,6 +32,7 @@ import Plataform from './components/Plataform';
 import Header from './src/Header';
 import TPanel from './src/TPanel'
 
+import Card from './src/components/Card';
 
 export default class App extends Component {
 	
@@ -47,56 +48,17 @@ export default class App extends Component {
 			<View style={{						
 					flex: 1,
 					flexDirection: 'column',
-					backgroundColor: 'darkgray',}}
+					backgroundColor: 'white',}}
 			>
-				<View     
-					style={{					
-						height: 300,
-						flexDirection: 'column',
-						backgroundColor: 'blue',
-					}} 
-				>
-					<Image
-						style={{
-							flex: 1,
-							flexDirection: 'column',
-							borderWidth: 1
-						}}
-						source={{uri:('https://i.pinimg.com/736x/a1/ec/dc/a1ecdc1ce19688bc1b02140439ce576e--product-photography-photography-ideas.jpg')}}					
-						resizeMode="stretch"
-					/>				
-				</View>					
-				<TouchableOpacity 
-					style={{					
-						height: 200,
-						flexDirection: 'column',
-						backgroundColor: 'blue',
-					}} >
-					<ImageBackground
-						style={styles.container}
-						source={{uri:('https://i.pinimg.com/736x/a1/ec/dc/a1ecdc1ce19688bc1b02140439ce576e--product-photography-photography-ideas.jpg')}}					
-						resizeMode="stretch"
-					>
-						<Text style={styles.titleStyle}>kdjdjd</Text>
-					</ImageBackground>	
-				</TouchableOpacity>			
-				<View     
-					style={{					
-						height: 300,
-						flexDirection: 'column',
-						backgroundColor: 'blue',
-					}} 
-				>
-					<Image
-						style={{
-							flex: 1,
-							flexDirection: 'column',
-							borderWidth: 1
-						}}
-						source={{uri:('https://i.pinimg.com/736x/a1/ec/dc/a1ecdc1ce19688bc1b02140439ce576e--product-photography-photography-ideas.jpg')}}					
-						resizeMode="stretch"
-					/>				
-				</View>								
+				<Card title='Whopper Jr' 
+					description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' 
+				/>				
+				<Card title='Whopper Doble'
+					description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, ' 
+				/>				
+				<Card title='Whopper Deluxe'
+					description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation u' 				
+				/>									
 			</View>
 			</ScrollView>
 			
