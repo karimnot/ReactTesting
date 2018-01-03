@@ -32,7 +32,8 @@ import Plataform from './components/Plataform';
 import Header from './src/Header';
 import TPanel from './src/TPanel'
 
-import Card from './src/components/Card';
+import ProductList from './src/components/ProductList';
+import ProductDetail from './src/components/ProductDetail';
 
 export default class App extends Component {
 	
@@ -40,28 +41,17 @@ export default class App extends Component {
 	 
 	
 		return (
-			<ScrollView style={{						
-							flex: 1,
-							backgroundColor: 'red'
+			<View style={{flex: 1}}>
+				<Header title='Product List'/>
+				<ProductDetail 
+					item={{
+						id: '1',
+						name: 'Whopper Jr',
+						description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+						img: 'https://i.pinimg.com/736x/a1/ec/dc/a1ecdc1ce19688bc1b02140439ce576e--product-photography-photography-ideas.jpg'
 					}}
-			>
-			<View style={{						
-					flex: 1,
-					flexDirection: 'column',
-					backgroundColor: 'white',}}
-			>
-				<Card title='Whopper Jr' 
-					description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' 
-				/>				
-				<Card title='Whopper Doble'
-					description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, ' 
-				/>				
-				<Card title='Whopper Deluxe'
-					description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation u' 				
-				/>									
+				/>
 			</View>
-			</ScrollView>
-			
 		);
     	}
 }

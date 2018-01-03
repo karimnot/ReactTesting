@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { 
   StyleSheet, 
   Text, 
-  View,
   ImageBackground,
   TouchableOpacity
 } from 'react-native';
@@ -11,16 +10,16 @@ const shortDescription = function (desc){
 	return desc.length < 200 ? desc : desc.substring(1,200).concat(" ", "[...]");
 };
 
-export default class Card extends Component {
+export default class ProductItem extends Component {
 	render(){
 		return(
 			<TouchableOpacity style={styles.cardContainer}>
 				<ImageBackground
 					style={styles.imageContainer}
-					source={{uri:('https://i.pinimg.com/736x/a1/ec/dc/a1ecdc1ce19688bc1b02140439ce576e--product-photography-photography-ideas.jpg')}}					
+					source={{uri:(this.props.img)}}				
 					resizeMode="stretch"
 				>
-					<Text style={styles.titleStyle}>{this.props.title}</Text>
+					<Text style={styles.titleStyle}>{this.props.name}</Text>
 					<Text style={styles.descriptionStyle}> {shortDescription(this.props.description)} </Text>
 				</ImageBackground>	
 			</TouchableOpacity>				

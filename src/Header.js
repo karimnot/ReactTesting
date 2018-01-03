@@ -15,7 +15,7 @@ const Header = (props) => {
 
 const styles = StyleSheet.create ({
 	viewStyle: {
-		backgroundColor: '#F8F8F8',
+		backgroundColor: 'black',
 		flexDirection: 'row',
 		justifyContent: 'center',
 		alignItems: 'center',
@@ -24,11 +24,11 @@ const styles = StyleSheet.create ({
 		shadowOffset: {width: 0, height: 10},
 		shadowOpacity: 5,
 		elevation: 2,
-		position: 'relative',
-		flex: 1	
+		position: 'relative'
 	},
 	textStyle: {
-		fontSize: 30
+		fontSize: 30,
+		color: 'white'
 	}
 });
 
