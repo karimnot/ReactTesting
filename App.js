@@ -37,6 +37,7 @@ import ProductDetail from './src/components/ProductDetail';
 import BottomMenu from './src/BottomMenu';
 import CategoryView from './src/components/CategoryView'
 import ProductsView from './src/components/ProductsView'
+import ProductDetailView from './src/components/ProductDetailView'
 
 
 export default class App extends Component {
@@ -48,9 +49,12 @@ export default class App extends Component {
 			<View style={{flex: 1}}>
 				<Header title='Product List'/>
 				<View style={{flex:1}}>
-					<ProductsView
-					/>
-				<BottomMenu title='Product List' />
+				<ProductDetailView item={{ 
+									id: 2,
+									name: 'name',
+									description: 'desc',
+									img: 'http://happyapple.com/wp-content/uploads/2017/04/nugv5-300x264.png'
+									}} />
 				</View>
 				
 			</View>

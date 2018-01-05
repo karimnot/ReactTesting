@@ -25,11 +25,21 @@ export default class ProductItemView extends Component {
 					/>
 				</View>
 				<View style={styles.descriptionView}>
-					<Text style={styles.titleStyle}>Tahoe OG</Text>
-					<Text style={styles.descriptionStyle}>
-						{shortDescription('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')}
-					</Text>
-					<View>
+					<View style={{flex:1}}>
+						<Text style={styles.titleStyle}>Tahoe OG</Text>
+						<Text style={styles.descriptionStyle}>
+							{shortDescription('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')}
+						</Text>
+					</View>
+					<View style={styles.priceView}>
+						<View style={styles.elementView}>
+							<View style={styles.promotionsView}>
+								<Text style={styles.promotionsFont}>New</Text>
+							</View>
+						</View>
+						<View style={styles.elementView}>
+							<Text style={styles.priceFont}>$ 9.90</Text>
+						</View>
 					</View>
 				</View>
 			</TouchableOpacity>				
@@ -76,8 +86,34 @@ const styles = StyleSheet.create({
 		paddingLeft: 10
 	},	
 	priceView: {
-		backgroundColor: 'red',
-		height: 50
-
+		flexDirection: 'row',
+		backgroundColor: 'transparent',
+		justifyContent: 'space-between',
+		height: 40,
+	},
+	elementView: {
+		justifyContent: 'center',
+		alignItems: 'center',	
+		width: 100,
+		backgroundColor: 'transparent',
+		borderRadius: 10,
+	},
+	promotionsView:{
+		justifyContent: 'center',
+		alignItems: 'center',			
+		backgroundColor: 'green',
+		padding: 5,
+		borderRadius: 10,
+		width: 70
+	},	
+	promotionsFont:{
+		color: 'white',
+		fontSize: 15,
+		fontWeight: 'bold'
+	},
+	priceFont:{
+		color: 'green',
+		fontSize: 18,
+		fontWeight: 'bold'
 	}
 });
